@@ -23,21 +23,48 @@
 ```
 
 `cd` - change the current directory
+```bash
+  cd /etc
+  cd Desktop
+  cd ~
+```
 
-`ls`
+`ls` - list information or documents of the file
+```bash
+  ls
+  ls /etc
+```
 
-`clear` or `L^`
+`clear` or `L^` - clear the command window
 
-`echo`
+`echo` - print the statement
 
-`cal`
+`cal` - calendar
+```bash
+  cal -A x -B y z 20**
+  # x,y : number
+  # z : month
+```
 
-`date`
+`date` - date
+```bash
+  date
+  date -u
+```
 
-`history` or `history -c`
+`history` or `history -c` - clears the history
 
-`changing zsh -> bash` 
+`changing zsh <-> bash` - change bash to zshell or vice-versa
+```
+  which $SHELL
+  chsh -s $(which $SHELL)
+```
 
+`ctrl+alt+t` - opening command
+
+`ctrl+d` or `exit` - closing terminal
+
+`sudo -i` - changing to root
 
 
 
