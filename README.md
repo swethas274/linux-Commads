@@ -7,18 +7,6 @@ Welcome to the **Linux Commands** repository! This repository contains a collect
 - Descriptions and explanations of each command
 - Usage examples to help you understand how they work
 
-## 📂 Repository Structure
-The repository is organized as follows:
-```
-linux-Commands/
-│── basic_commands.txt    # List of fundamental Linux commands
-│── file_management.txt   # Commands related to file handling
-│── process_management.txt # Commands for managing processes
-│── networking.txt        # Basic networking commands
-│── permissions.txt       # File and directory permissions
-└── system_info.txt       # Commands to retrieve system information
-```
-
 ## 🚀 Getting Started
 If you're new to Linux, you can explore the commands by checking the respective files in the repository. To use the commands, simply open a terminal and type them as instructed.
 
