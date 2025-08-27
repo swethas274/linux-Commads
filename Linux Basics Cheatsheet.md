@@ -1,7 +1,3 @@
-Perfect 👍 You want the **entire Linux Basics guide** formatted as a `README.md` file code block so you can copy-paste directly.
-Here it is:
-
-
 # 🐧 Linux Basics Cheatsheet
 
 A beginner-friendly list of **essential Linux commands** and keywords.  
