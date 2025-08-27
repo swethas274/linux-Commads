@@ -1,99 +1,256 @@
-# basic_commands
+Perfect 👍 You want the **entire Linux Basics guide** formatted as a `README.md` file code block so you can copy-paste directly.
+Here it is:
 
-## Basic Commands
 
-`pwd` - present working device
-```bash
+# 🐧 Linux Basics Cheatsheet
+
+A beginner-friendly list of **essential Linux commands** and keywords.  
+Useful for quick reference while learning Linux.  
+
+---
+
+## 📂 Navigation & File Management
+- **pwd** → print working directory
+  ```bash
   pwd
-  #/home/root
-```
+  # /home/user
+  ```
 
-`passwd` - change the password
-```bash
-  passwd
-  #changing password for root
-  #Current password: ************
-  #New password: *********
-```
+* **cd** → change directory
 
-`whoami` - username
-```bash
-  whoami
-  # root
-```
-
-`cd` - change the current directory
-```bash
+  ```bash
   cd /etc
   cd Desktop
-  cd ~
-```
+  cd ~   # home directory
+  ```
+* **ls** → list files and directories
 
-`ls` - list information or documents of the file
-```bash
+  ```bash
   ls
-  ls /etc
-```
+  ls -l   # detailed list
+  ls -a   # show hidden files
+  ```
+* **mkdir** → create directory
 
-`clear` or `L^` - clear the command window
+  ```bash
+  mkdir projects
+  ```
+* **rmdir** → remove empty directory
 
-`echo` - print the statement
+  ```bash
+  rmdir projects
+  ```
+* **touch** → create empty file
 
-`cal` - calendar
-```bash
-  cal -A x -B y z 20**
-  # x,y : number
-  # z : month
-```
+  ```bash
+  touch notes.txt
+  ```
+* **cp** → copy file/directory
 
-`date` - date
-```bash
+  ```bash
+  cp file1.txt file2.txt
+  cp -r dir1/ dir2/
+  ```
+* **mv** → move/rename file
+
+  ```bash
+  mv old.txt new.txt
+  ```
+* **rm** → remove file
+
+  ```bash
+  rm file.txt
+  rm -r folder/
+  ```
+
+---
+
+## 📖 Viewing & Editing
+
+* **cat** → display file content
+
+  ```bash
+  cat file.txt
+  ```
+* **less** → view file page by page
+
+  ```bash
+  less file.txt
+  ```
+* **head** → show first lines of a file
+
+  ```bash
+  head file.txt
+  ```
+* **tail** → show last lines of a file
+
+  ```bash
+  tail -f logfile.log   # live logs
+  ```
+* **nano** → open file in Nano editor
+
+  ```bash
+  nano file.txt
+  ```
+
+  * `Ctrl+O` → save
+  * `Ctrl+X` → exit
+* **vim** → open file in Vim editor (if installed)
+
+  ```bash
+  vim file.txt
+  ```
+
+---
+
+## ⚡ System Info & Utilities
+
+* **whoami** → print current username
+
+  ```bash
+  whoami
+  ```
+* **hostname** → show computer name
+
+  ```bash
+  hostname
+  ```
+* **uname** → system info
+
+  ```bash
+  uname -a
+  ```
+* **date** → show system date/time
+
+  ```bash
   date
-  date -u
+  date -u   # UTC time
+  ```
+* **cal** → calendar
+
+  ```bash
+  cal
+  cal -A 2 -B 1 8 2024   # Aug 2024 with context
+  ```
+* **history** → list commands history
+
+  ```bash
+  history
+  history -c   # clear history
+  ```
+* **clear** → clear terminal screen
+
+---
+
+## 🔑 Permissions & Users
+
+* **passwd** → change user password
+
+  ```bash
+  passwd
+  ```
+* **sudo -i** → switch to root user
+* **exit** / `Ctrl+D` → exit terminal or log out
+* **chmod** → change permissions
+
+  ```bash
+  chmod 755 script.sh
+  ```
+* **chown** → change file owner
+
+  ```bash
+  chown user:user file.txt
+  ```
+
+---
+
+## 📚 Help & Documentation
+
+* **man** → manual pages
+
+  ```bash
+  man ls
+  ```
+* **--help** → quick help for commands
+
+  ```bash
+  ls --help
+  ```
+* **info** → extended documentation
+
+  ```bash
+  info coreutils
+  ```
+
+---
+
+## 📌 Process & System Monitoring
+
+* **ps** → list processes
+
+  ```bash
+  ps aux
+  ```
+* **top** → live process viewer
+* **htop** → interactive process viewer (if installed)
+* **kill** → stop process
+
+  ```bash
+  kill -9 <PID>
+  ```
+
+---
+
+## 📦 Package Management (varies by distro)
+
+* Debian/Ubuntu:
+
+  ```bash
+  sudo apt update
+  sudo apt install package-name
+  ```
+* RedHat/CentOS:
+
+  ```bash
+  sudo yum install package-name
+  ```
+* Arch:
+
+  ```bash
+  sudo pacman -S package-name
+  ```
+
+---
+
+## 🔑 Important Directories
+
+* `/root` → root user’s home directory
+* `/boot` → kernel & boot loader files
+* `/etc` → system configuration files
+* `/home` → user directories
+* `/mnt` → temporary mount point
+* `/proc` → kernel & process info
+* `/sys` → system hardware info
+* `/dev` → device files
+* `/bin` → essential binaries
+* `/sbin` → system binaries
+* `/lib` → system libraries
+* `/usr` → user programs & libraries
+
+---
+
+## ⌨️ Useful Shortcuts
+
+* **Ctrl+Alt+T** → open terminal
+* **Ctrl+L** → clear screen (same as `clear`)
+* **Ctrl+C** → stop running process
+* **Ctrl+Z** → suspend process
+* **fg** → bring suspended job to foreground
+
 ```
 
-`history` or `history -c` - clears the history
+---
 
-`changing zsh <-> bash` - change bash to zshell or vice-versa
+✅ This is a **complete README.md** for beginners in Linux.  
+Would you like me to also make a **condensed 1-page cheatsheet version** (minimal commands only) so you can keep it as `Linux_Quick_Ref.md` alongside this detailed one?
 ```
-  which $SHELL
-  chsh -s $(which $SHELL)
-```
-
-`ctrl+alt+t` - opening command
-
-`ctrl+d` or `exit` - closing terminal
-
-`sudo -i` - changing to root
-
-
-
-
-
-
-## Some Keywords
-
-`root`  - superuser's home directory 
-
-`boat`  - kernel image
-
-`etc`   - system configuration files
-
-`home`  - use directory
-
-`mnt`   - general purpose mount point
-
-`proc`  - view of internal kernal data
-
-`sys`   - kernel's view of hardware
-
-`dev`   - special device files
-
-`bin`   - binarier
-
-`sbin`  - binaries
-
-`lib`   - library
-
-`usr`   - user library
-
